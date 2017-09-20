@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentlayout"
+    android:weightSum="3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mitaksh.imageprocessingapp.EditImage">
+
+    <RelativeLayout
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        >
+
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center|bottom"
+        android:layout_alignParentBottom="true"
+
+        >
+
+
+       <Button
+           android:id="@+id/btn_caption"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:text="Add Comment"
+           android:gravity="center"
+           android:layout_gravity="bottom|end"
+           android:layout_alignParentBottom="true"/>
+
+        <Button
+            android:id="@+id/btn_draw"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Draw"
+            android:gravity="center"
+            android:layout_gravity="bottom|end"
+            android:layout_alignParentBottom="true"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
